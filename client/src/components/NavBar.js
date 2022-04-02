@@ -20,17 +20,17 @@ const NavBar = observer(() => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <NavLink style={{color:'white'}} to={SHOP_ROUTE}>КупиДевайс</NavLink>
+                <NavLink style={{color:'white'}} to={SHOP_ROUTE}>Honey Map</NavLink>
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'white'}}>
                         <Button
-                            variant={"outline-light"}
+                            variant={"outline-warning"}
                             onClick={() => history.push(ADMIN_ROUTE)}
                         >
                             Админ панель
                         </Button>
                         <Button
-                            variant={"outline-light"}
+                            variant={"outline-warning"}
                             onClick={() => logOut()}
                             className="ml-2"
                         >

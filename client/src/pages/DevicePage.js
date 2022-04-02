@@ -20,12 +20,12 @@ const DevicePage = () => {
                 <Col md={4}>
                     <Row className="d-flex flex-column align-items-center">
                         <h2>{device.name}</h2>
-                        <div
+                        {/* <div
                             className="d-flex align-items-center justify-content-center"
                             style={{background: `url(${bigStar}) no-repeat center center`, width:240, height: 240, backgroundSize: 'cover', fontSize:64}}
                         >
                             {device.rating}
-                        </div>
+                        </div> */}
                     </Row>
                 </Col>
                 <Col md={4}>
