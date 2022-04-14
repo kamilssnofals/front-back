@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import "./NavBar.css"
 import {Context} from "../index";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -18,9 +19,9 @@ const NavBar = observer(() => {
     }
 
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar className='Nav' bg="" variant="dark">
             <Container>
-                <NavLink style={{color:'white'}} to={SHOP_ROUTE}>Honey Map</NavLink>
+                <NavLink style={{color:'white'}} to={SHOP_ROUTE}>Japan-food</NavLink>
                 {user.isAuth ?
                     <Nav className="ml-auto" style={{color: 'white'}}>
                         <Button
